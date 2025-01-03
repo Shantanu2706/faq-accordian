@@ -43,6 +43,10 @@ hr {
   line-height: 20px;
 }
 
+.attribution{
+  text-align: center;
+}
+
 .card{
   width: 520px;
   margin: 165px auto;

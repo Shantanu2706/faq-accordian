@@ -16,13 +16,13 @@ function App() {
         frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for
         all levels and ideal for portfolio building."
         />
-        <hr/>
+        <hr />
         <QAComponent
           question="Is Frontend Mentor free?"
           answer="Yes, Frontend Mentor offers both free and
         premium coding challenges, with the free option providing access to a
         range of projects suitable for all skill levels."/>
-        <hr/>
+        <hr />
         <QAComponent
           question="Can I use Frontend
         Mentor projects in my portfolio?"
@@ -30,7 +30,7 @@ function App() {
         Frontend Mentor in your portfolio. It's an excellent way to showcase
         your skills to potential employers!"
         />
-        <hr/>
+        <hr />
         <QAComponent
           question="How can I get help if I'm stuck on a
          challenge?"
@@ -38,6 +38,10 @@ function App() {
         Mentor's Discord community. There's a help channel where you can ask
         questions and seek support from other community members."
         />
+      </div>
+      <div class="attribution">
+        Challenge by Frontend Mentor.
+        Coded by Shantanu Pimprikar.
       </div>
     </div>
   );
