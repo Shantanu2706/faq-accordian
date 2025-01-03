@@ -86,7 +86,7 @@ hr {
   cursor: pointer;
 }
 
-@media (max-width: 390px) {
+@media (max-width: 375px) {
   body {
     background-image: url("../public/assets/images/background-pattern-mobile.svg");
   }
