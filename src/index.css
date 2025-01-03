@@ -1,13 +1,121 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: "WorkSans";
+  src: url("../public/assets/fonts/WorkSans-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: "WorkSans-Bold";
+  src: url("../public/assets/fonts/WorkSans-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "WorkSans-SemiBold";
+  src: url("../public/assets/fonts/WorkSans-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+body {
+  font-family: "WorkSans", sans-serif;
+  background-image: url("../public/assets/images/background-pattern-desktop.svg");
+  background-repeat: no-repeat;
+  background-color: hsl(275, 100%, 97%);
+}
+
+hr {
+  margin: 30px 0;
+  border-color: white;
+  border-width: 1px 0 0 0;
+  opacity: 0.3;
+}
+
+.answer {
+  color: hsl(292, 16%, 49%);
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.card{
+  width: 520px;
+  margin: 165px auto;
+  background-color: white;
+  border-radius: 15px;
+  padding: 40px;
+}
+
+.card-header {
+  font-family: "WorkSans-Bold", sans-serif;
+  font-size: 55px;
+  margin: 5px 0 30px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  color: hsl(292, 42%, 14%);
+}
+
+.icon-minus-plus {
+  cursor: pointer;
+}
+
+.icon-star {
+  height: 40px;
+}
+
+.question-section {
+  color: hsl(292, 42%, 14%);
+  font-size: 18px;
+  font-family: "WorkSans-SemiBold";
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.question:hover {
+  color: hsl(293, 95%, 41%);
+  cursor: pointer;
+}
+
+@media (max-width: 390px) {
+  body {
+    background-image: url("../public/assets/images/background-pattern-mobile.svg");
+  }
+
+  hr {
+    margin: 20px 0;
+  }
+
+  .answer {
+    font-size: 14.5px;
+  }
+
+  .card {
+    margin: 140px auto;
+    width: 288px;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .card-header {
+    font-size: 30px;
+    margin: 5px 0 25px 0;
+  }
+
+  .icon-star {
+    height: 25px;
+  }
+
+  .question-section {
+    font-size: 16px;
+  }
 }
